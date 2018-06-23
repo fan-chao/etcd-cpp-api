@@ -9,11 +9,11 @@ etcd::Value::Value()
 }
 
 etcd::Value::Value(web::json::value const & json_value)
-  : _key(json_value.has_field(JSON_KEY) ? json_value.at(JSON_KEY).as_string() : ""),
-    dir(json_value.has_field(JSON_DIR)),
-    value(json_value.has_field(JSON_VALUE) ? json_value.at(JSON_VALUE).as_string() : ""),
-    created(json_value.has_field(JSON_CREATED) ? json_value.at(JSON_CREATED).as_number().to_int64() : 0),
-    modified(json_value.has_field(JSON_MODIFIED) ? json_value.at(JSON_MODIFIED).as_number().to_int64() : 0)
+  : _key(utility::conversions::to_utf8string(json_value.has_field(utility::conversions::to_string_t(JSON_KEY)) ? json_value.at(utility::conversions::to_string_t(JSON_KEY)).as_string() : U(""))),
+    dir(json_value.has_field(U("dir"))),
+    value(utility::conversions::to_utf8string(json_value.has_field(utility::conversions::to_string_t(JSON_VALUE)) ? json_value.at(utility::conversions::to_string_t(JSON_VALUE)).as_string() : U(""))),
+    created(json_value.has_field(utility::conversions::to_string_t(JSON_CREATED)) ? json_value.at(utility::conversions::to_string_t(JSON_CREATED)).as_number().to_int64() : 0),
+    modified(json_value.has_field(utility::conversions::to_string_t(JSON_MODIFIED)) ? json_value.at(utility::conversions::to_string_t(JSON_MODIFIED)).as_number().to_int64() : 0)
 {
 }
 

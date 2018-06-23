@@ -2,6 +2,7 @@
 #define __ETCD_VECTOR_HPP__
 
 #include <cpprest/http_client.h>
+#include "macros.h"
 #include <string>
 #include <vector>
 
@@ -17,27 +18,27 @@ namespace etcd
      * Returns true if this value represents a directory on the server. If true the as_string()
      * method is meaningless.
      */
-    bool is_dir() const;
+      ETCD_API bool is_dir() const;
 
     /**
      * Returns the key of this value as an "absolute path".
      */
-    std::string const & key() const;
+      ETCD_API std::string const & key() const;
 
     /**
      * Returns the string representation of the value
      */
-    std::string const & as_string() const;
+      ETCD_API std::string const & as_string() const;
 
     /**
      * Returns the creation index of this value.
      */
-    int created_index() const;
+      ETCD_API int created_index() const;
 
     /**
      * Returns the last modification's index of this value.
      */
-    int modified_index() const;
+      ETCD_API int modified_index() const;
 
   protected:
     friend class Response;
