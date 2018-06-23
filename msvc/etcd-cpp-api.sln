@@ -1,0 +1,43 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "etcd-cpp-api", "src\etcd-cpp-api.vcxproj", "{1E80D08B-4EEF-3721-A00C-A9E4DDB905C2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "etcd_test", "tst\etcd_test.vcxproj", "{8F343ED2-D542-3FB1-A577-369D446B4C7F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1E80D08B-4EEF-3721-A00C-A9E4DDB905C2} = {1E80D08B-4EEF-3721-A00C-A9E4DDB905C2}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		MinSizeRel|Win32 = MinSizeRel|Win32
+		Release|Win32 = Release|Win32
+		RelWithDebInfo|Win32 = RelWithDebInfo|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E80D08B-4EEF-3721-A00C-A9E4DDB905C2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1E80D08B-4EEF-3721-A00C-A9E4DDB905C2}.Debug|Win32.Build.0 = Debug|Win32
+		{1E80D08B-4EEF-3721-A00C-A9E4DDB905C2}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{1E80D08B-4EEF-3721-A00C-A9E4DDB905C2}.MinSizeRel|Win32.Build.0 = MinSizeRel|Win32
+		{1E80D08B-4EEF-3721-A00C-A9E4DDB905C2}.Release|Win32.ActiveCfg = Release|Win32
+		{1E80D08B-4EEF-3721-A00C-A9E4DDB905C2}.Release|Win32.Build.0 = Release|Win32
+		{1E80D08B-4EEF-3721-A00C-A9E4DDB905C2}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{1E80D08B-4EEF-3721-A00C-A9E4DDB905C2}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
+		{8F343ED2-D542-3FB1-A577-369D446B4C7F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8F343ED2-D542-3FB1-A577-369D446B4C7F}.Debug|Win32.Build.0 = Debug|Win32
+		{8F343ED2-D542-3FB1-A577-369D446B4C7F}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{8F343ED2-D542-3FB1-A577-369D446B4C7F}.MinSizeRel|Win32.Build.0 = MinSizeRel|Win32
+		{8F343ED2-D542-3FB1-A577-369D446B4C7F}.Release|Win32.ActiveCfg = Release|Win32
+		{8F343ED2-D542-3FB1-A577-369D446B4C7F}.Release|Win32.Build.0 = Release|Win32
+		{8F343ED2-D542-3FB1-A577-369D446B4C7F}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{8F343ED2-D542-3FB1-A577-369D446B4C7F}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {691E7FF5-F708-3B6C-AC17-ABE5F5AF96B9}
+	EndGlobalSection
+EndGlobal

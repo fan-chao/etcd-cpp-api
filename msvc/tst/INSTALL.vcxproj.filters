@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="F:\thirdparty\etcd\etcd-cpp-api-master\msvc\CMakeFiles\ef1e4fd75565d07afc0264e2b25abbaa\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B00049B6-44D1-3A3F-8DF6-26C8D94D572F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
